@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_12d02ba526a47f4"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@storybook/addon-designs": "^7.0.5",
     "@storybook/addon-essentials": "^7.5.1",
     "@storybook/addon-interactions": "^7.5.1",
     "@storybook/addon-links": "^7.5.1",
@@ -23,5 +25,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.5.1"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "vue@1.0.0",
+  "dependencies": {
+    "storybook-addon-designs": "^6.3.1"
   }
 }

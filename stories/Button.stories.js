@@ -1,3 +1,4 @@
+import { withDesign } from 'storybook-addon-designs';
 import MyButton from './Button.vue';
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
@@ -17,6 +18,7 @@ export default {
       options: ['small', 'medium', 'large'],
     },
   },
+  decorators: [withDesign],
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/vue/writing-stories/args
@@ -46,3 +48,18 @@ export const Small = {
     label: 'Button',
   },
 };
+
+export const Example = {
+  render: () => ({
+    components: { MyButton },
+    template: '<MyButton />',
+  }),
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/rHhDUF8gYoXoUppFtyJ0Mu/Product-Page?type=design&node-id=2209%3A31836&mode=design&t=kVcSMuaEsciOcQKi-1',
+    },
+  },
+};
+
+

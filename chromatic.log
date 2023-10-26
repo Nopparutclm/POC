@@ -2,4 +2,19 @@
 Chromatic CLI v7.5.0
 https://www.chromatic.com/docs/cli
 
+✖ Found only one commit
+This typically means you have ran into one of the following scenarios:
+- You've checked out a shallow copy of the Git repository, which some CI systems do by default.
+  In order for Chromatic to correctly determine baseline commits, we need access to the full Git history graph.
+  Refer to your CI provider's documentation for details.
+- You've only made a single commit so far.  
+  Please make at least one additional commit in order for Chromatic to be able to detect what's changed.
+ℹ Speed up Continuous Integration
+Your project is linked to GitHub so Chromatic will report results there.
+This means you can pass the --exit-once-uploaded flag to skip waiting for build results.
+Read more here: https://www.chromatic.com/docs/cli#chromatic-options
+✔ Build passed. Welcome to Chromatic!
+We found 3 components with 8 stories and took 8 snapshots.
+ℹ Please continue setup at https://www.chromatic.com/setup?appId=653a1c5561ce44b24ac4b3ec
+
 
